@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuite" parallel="false">
+
+    <!-- Defining the test classes with method order -->
+    <test name="QAMobileDemoTest">
+        <classes>
+            <class name="tests.TextBoxTest">
+                <methods>
+                    <!-- Method order defined explicitly -->
+                    <include name="checkIfFullNameFieldIsRequired" />
+                    <include name="checkIfEmailFieldIsRequired" />
+                    <include name="checkIfAddressFieldIsRequired" />
+                    <include name="checkIfUserCanTypeInFullNameField" />
+                    <include name="checkFullNameFieldMinimumCharacters" />
+                    <include name="checkFullNameFieldMaximumCharacters" />
+                    <include name="checkIfUserCanDeleteFullNameField" />
+                    <include name="checkIfUserCanTypeInEmailField" />
+                    <include name="checkEmailField" />
+                    <include name="checkIfUserCanDeleteEmailField" />
+                    <include name="checkIfUserCanTypeInAddressField" />
+                    <include name="checkAddressFieldMinimumCharacters" />
+                    <include name="checkAddressFieldMaximumCharacters" />
+                    <include name="checkIfUserCanDeleteAddressField" />
+                    <include name="checkIfUserCanTypeInCommentField" />
+                    <include name="checkCommentFieldMaximumCharacters" />
+                </methods>
+            </class>
+            <class name="tests.CheckboxTest">
+                <methods>
+                    <include name="checkFirstCheckboxCheck" />
+                    <include name="checkFirstCheckboxUncheck" />
+                    <include name="checkSecondCheckboxCheck" />
+                    <include name="checkSecondCheckboxUncheck" />
+                    <include name="checkThirdCheckboxCheck" />
+                    <include name="checkThirdCheckboxUncheck" />
+                    <include name="checkAllCheckboxesUnchecked" />
+                    <include name="checkAllCheckboxesChecked" />
+                </methods>
+            </class>
+            <class name="tests.TableTest">
+                <methods>
+                    <include name="checkIfUserCanTypeInSearchField" />
+                    <include name="checkIfUserCanSearch" />
+                    <include name="checkNewNameIsRequired" />
+                    <include name="checkNewAgeIsRequired" />
+                    <include name="checkNewNameAndNewAgeIsRequired" />
+                    <include name="checkIfUserCanTypeInNewNameField" />
+                    <include name="checkIfUserCanTypeInNewAgeField" />
+                    <include name="checkIfNewRowAdded" />
+                    <include name="checkTableNameEdit" />
+                    <include name="checkIfRowDeleted" />
+                </methods>
+            </class>
+            <class name="tests.DatePickerTest">
+                <methods>
+                    <include name="checkDatePicker" />
+                </methods>
+            </class>
+            <class name="tests.AccordionTest">
+                <methods>
+                    <include name="checkFirstAccordionOpen" />
+                    <include name="checkFirstAccordionClose" />
+                    <include name="checkSecondAccordionOpen" />
+                    <include name="checkSecondAccordionClose" />
+                    <include name="checkThirdAccordionOpen" />
+                    <include name="checkThirdAccordionClose" />
+                </methods>
+            </class>
+            <class name="tests.ProgressBarTest">
+                <methods>
+                    <include name="checkProgressBarProgress" />
+                    <include name="checkProgressBarReset" />
+                </methods>
+            </class>
+            <class name="tests.FormTest">
+                <methods>
+                    <include name="checkIfUsernameFieldIsRequired" />
+                    <include name="checkIfUserCanTypeInUsernameField" />
+                    <include name="checkIfUserCanDeleteUsernameField" />
+                    <include name="checkIfEmailFieldIsRequired" />
+                    <include name="checkIfUserCanTypeInEmailField" />
+                    <include name="checkEmailField" />
+                    <include name="checkIfUserCanDeleteEmailField" />
+                    <include name="checkIfMobileNumberFieldIsRequired" />
+                    <include name="checkIfUserCanTypeInMobileNumberField" />
+                    <include name="checkMobileNumberFieldLength" />
+                    <include name="checkIfUserCanDeleteMobileNumberField" />
+                    <include name="checkIfGenderFieldIsRequired" />
+                    <include name="checkDateOfBirthDatePicker" />
+                    <include name="CheckDateOfBirthIsFuture" />
+                    <include name="checkIfImageFieldIsRequired" />
+                    <include name="checkIfUserCanSelectImage" />
+                    <include name="checkIfPrivacyPolicyCheckboxIsRequired" />
+                    <include name="checkIfDescriptionFieldIsRequired" />
+                    <include name="checkIfUserCanTypeInDescriptionField" />
+                    <include name="checkIfUserCanDeleteDescriptionField" />
+                    <include name="checkFormSubmit" />
+                </methods>
+            </class>
+            <class name="tests.AlertTest">
+                <methods>
+                    <include name="checkFirstAlertOpen" />
+                    <include name="checkOkButtonClickOnFirstAlert" />
+                    <include name="checkSecondAlertOpen" />
+                    <include name="checkOkButtonClickOnSecondAlert" />
+                    <include name="checkConfirmBoxOpen" />
+                    <include name="checkCancelButtonOnConfirmBox" />
+                    <include name="checkOkButtonClickOnConfirmBox" />
+                    <include name="checkPromptOpen" />
+                    <include name="checkIfUserCanTypeInPromptInputField" />
+                    <include name="checkIfUserCanDeletePromptInputField" />
+                    <include name="checkCancelButtonOnPromptBox" />
+                    <include name="checkOkButtonClickOnPromptBox" />
+                </methods>
+            </class>
+            <class name="tests.ModalTest">
+                <methods>
+                    <include name="checkModalOpen" />
+                    <include name="checkModalClose" />
+                </methods>
+            </class>
+            <class name="tests.RegistrationTest">
+                <methods>
+                    <include name="checkIfUsernameFieldIsRequired" />
+                    <include name="checkIfUserCanTypeInUsernameField" />
+                    <include name="checkIfUserCanDeleteUsernameField" />
+                    <include name="checkIfEmailFieldIsRequired" />
+                    <include name="checkIfUserCanTypeInEmailField" />
+                    <include name="checkEmailField" />
+                    <include name="checkIfUserCanDeleteEmailField" />
+                    <include name="checkIfPasswordFieldIsRequired" />
+                    <include name="checkIfUserCanTypeInPasswordField" />
+                    <include name="checkPasswordMinimumLength" />
+                    <include name="checkIfUserCanDeletePasswordField" />
+                    <include name="checkIfConfirmPasswordFieldIsRequired" />
+                    <include name="checkIfUserCanTypeInConfirmPasswordField" />
+                    <include name="checkIfConfirmPasswordFieldEqualsPassword" />
+                    <include name="checkIfUserCanDeleteConfirmPasswordField" />
+                    <include name="checkSuccessfulRegistration" />
+                </methods>
+            </class>
+            <class name="tests.LoginPageTests">
+                <methods>
+                    <include name="checkIfUsernameFieldIsRequired" />
+                    <include name="checkIfUserCanTypeInUsernameField" />
+                    <include name="checkIfUserCanDeleteUsernameField" />
+                    <include name="checkIfPasswordFieldIsRequired" />
+                    <include name="checkIfUserCanTypeInPasswordField" />
+                    <include name="checkIfUserCanDeletePasswordField" />
+                    <include name="CheckCorrectUsernameAndWrongPassword" />
+                    <include name="CheckCorrectPasswordAndWrongUsername" />
+                </methods>
+            </class>
+            <class name="tests.SelectTest">
+                <methods>
+                    <include name="checkMultiSelectFirstOptionSelection" />
+                    <include name="checkSingleSelectFirstOptionSelection" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

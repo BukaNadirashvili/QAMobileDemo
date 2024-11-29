@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]">
+  <test thread-count="5" name="QAMobileDemoTest(failed)">
+    <classes>
+      <class name="tests.ModalTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="takeFailedResultScreenshot"/>
+          <include name="tearDown"/>
+          <include name="loadApplication"/>
+          <include name="checkModalOpen"/>
+        </methods>
+      </class> <!-- tests.ModalTest -->
+    </classes>
+  </test> <!-- QAMobileDemoTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
